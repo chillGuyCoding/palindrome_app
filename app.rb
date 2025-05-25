@@ -3,5 +3,13 @@
 require 'sinatra'
 
 get '/' do
-  'hello brave new world!'
+  erb :index
+end
+
+get '/about' do
+  erb :about
+end
+
+get '/palindrome' do
+  erb :palindrome
 end
